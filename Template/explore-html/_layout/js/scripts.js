@@ -539,11 +539,11 @@
 			$(".portfolio-item-2").css("height", "auto");			
 		}
 		
-		if (($(window).width() > 1400) || (($(window).width() > 767) && ($(window).width() < 979))) {					
-			$(".team-member-description").css("height", $(".team-member > img").height() + "px");		
-		} else {			
-			$(".team-member-description").css("height", "auto");
-		}
+		// if (($(window).width() > 1400) || (($(window).width() > 767) && ($(window).width() < 979))) {					
+		// 	$(".team-member-description").css("height", $(".team-member > img").height() + "px");		
+		// } else {			
+		// 	$(".team-member-description").css("height", "auto");
+		// }
 		
 	}
 	 

@@ -362,3 +362,14 @@
 		float: none; 	/* 1 */
 		margin-left: 0; /* 2 */
 	}
+
+	/*Matt Hong*/
+	.team-span{
+		text-align:center;
+	}
+	.team-row-container{
+		margin: 0 auto;
+	}
+	.team-row{
+		margin: 0 auto;
+	}
