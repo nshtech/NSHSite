@@ -50,18 +50,52 @@
     <!-- <link rel="stylesheet" href="_layout/css/skins/orange.css"> -->
     <link rel="stylesheet" href="custom/navbar.css">
     <style type="text/css">
-    .tp-bannertimer{
-        display: none;
-    }
-    .nsh-social-media i{
-        font-size: 24px!important;
-        line-height: 48px!important;
-    }
-    .nsh-social-media a.social-icon{
-        width: 48px;
-        height: 48px;
+    .splash-container { 
+        height: 100vh;
+      background: url(_content/NSH/home-splash.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: relative;
     }
 
+    .splash{
+        width: 80vw;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    .splash h1 strong{
+        font-size: 1.7em!important;
+    }
+    .splash h2{
+        font-size: 1.7em!important;
+        font-weight: 600!important;
+    }
+    #content{
+        padding-top: 0!important;
+    }
+    .headline h1{
+        margin-top: 2.5em;
+    }
+    #footer{
+        padding: 40px 0 10px 0;
+    }
+    #footer-links h4{
+        display: inline-block;
+        margin-right: 5px;
+    }
+    #footer-links div{
+        display: inline-block;
+    }
+    #footer-links > *{
+        float: right;
+    }
     </style>
     
 </head>
@@ -91,7 +125,7 @@
 
             <div class="header-wrap-content">
                 
-                <div id="header">
+                <div id="header" class="stuck">
 
                     <div class="row-container">                    
                         
@@ -103,7 +137,8 @@
                                     <!-- // Logo // -->
                                     <div id="logo">
                                         <a href="index.html">
-                                            <img src="_content/NSH/nsh_condensed_logo.png" alt="website logo">
+                                            <img src="_content/NSH/NSH-Logo-White.png" id="white-logo" alt="website logo white">
+                                            <img src="_content/NSH/nsh_condensed_logo.png" id="gray-logo" alt="website logo gray">
                                         </a>
                                     </div>
                                 
@@ -121,50 +156,17 @@
                                     <nav>
                             
                                         <ul class="sf-menu fixed" id="menu">
-                                            <li class="dropdown current">
+                                            <li>
                                                 <a href="index.html">Home</a>
-                                                <ul>
-                                                    <li><a href="index.html">Home 1</a></li>
-                                                    <li><a href="index-2.html">Home 2</a></li>
-                                                    <li><a href="index-3.html">Home 3</a></li>
-                                                </ul>
                                             </li>
-                                            <li class="dropdown">
+                                            <li>
                                                 <a href="about-us.html">About</a>
-                                                <ul>
-                                                    <li><a href="about-us.html">About us</a></li>
-                                                    <li><a href="services.html">Services</a></li>
-                                                    <li><a href="single-service.html">Single service</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                                    <li><a href="page-404.html">Page 404</a></li>
-                                                    <li><a href="full-width-page.html">Full width page</a></li>
-                                                    <li><a href="page-with-sidebar.html">Page with sidebar</a></li>                                
-                                                    <li class="dropdown">
-                                                        <a href="#">3rd level dropdown</a>
-                                                         <ul>
-                                                            <li><a href="#">3rd level</a></li>
-                                                            <li><a href="#">Dropdown</a></li>
-                                                            <li><a href="#">Example</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="portfolio-1.html">Portfolio</a>
-                                                <ul>
-                                                    <li><a href="portfolio-1.html">Portfolio 1</a></li>
-                                                    <li><a href="portfolio-2.html">Portfolio 2</a></li>
-                                                    <li><a href="portfolio-3.html">Portfolio 3</a></li>
-                                                    <li><a href="portfolio-item.html">Portfolio item</a></li>
-                                                </ul>
+                                            <li>
+                                                <a href="pf">Portfolio</a>
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="blog.html">Apply</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-post.html">Blog post</a></li>
-                                                </ul>
+                                            <li>
+                                                <a href="apply">Apply</a>         
                                             </li>
                                             <li>
                                                 <a href="contact.html">Contact</a>
@@ -182,118 +184,6 @@
 
                 </div><!-- end #header -->
 
-                <div class="fullwidthbanner-container">
-                    <div class="fullwidthbanner">
-                    
-                        <ul>                            
-                            <li data-transition="fade">
-                            
-                                <img src="_content/index/slider/1920x915-2.jpg"  alt="">
-                                
-                                <div class="caption title sft"
-                                     data-x="580"
-                                     data-y="350"
-                                     data-speed="1000"
-                                     data-start="2000"
-                                     data-easing="easeOutExpo">
-                                     Northwestern Student Holdings                               
-                                </div>
-                                
-                                <div class="caption text sfr"
-                                     data-x="395"
-                                     data-y="430"
-                                     data-speed="1000"
-                                     data-start="2500"
-                                     data-easing="easeOutExpo">
-                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim ac tellus lobortis                             
-                                </div>
-                                
-                                <div class="caption sfb"
-                                     data-x="810"
-                                     data-y="550"
-                                     data-speed="1000"
-                                     data-start="3000"
-                                     data-easing="easeOutExpo">
-                                     <a class="btn" href="#">Learn more</a>                         
-                                </div>
-                                
-                            </li>
-                            <li data-transition="fade">
-                            
-                                <img src="_content/index/slider/1920x915-1.jpg"  alt="">
-                                
-                                <div class="caption title sft"
-                                     data-x="650"
-                                     data-y="350"
-                                     data-speed="1000"
-                                     data-start="1000"
-                                     data-easing="easeOutExpo">
-                                     Explore all that is new                                 
-                                </div>
-                                
-                                <div class="caption text sfr"
-                                     data-x="365"
-                                     data-y="430"
-                                     data-speed="1000"
-                                     data-start="1500"
-                                     data-easing="easeOutExpo">
-                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim ac tellus lobortis                             
-                                </div>
-                                
-                                <div class="caption sfb"
-                                     data-x="810"
-                                     data-y="550"
-                                     data-speed="1000"
-                                     data-start="2000"
-                                     data-easing="easeOutExpo">
-                                     <a class="btn" href="#">Learn more</a>                         
-                                </div>
-                                
-                            </li>
-                            <li data-transition="fade">
-                            
-                                <img src="_content/index/slider/1920x915-3.jpg"  alt="">
-                                
-                                <div class="caption bg fade"
-                                     data-x="100"
-                                     data-y="360"
-                                     data-speed="1000"
-                                     data-start="1000"
-                                     data-easing="easeOutExpo">
-                                </div>
-                                
-                                <div class="caption title-2 sft"
-                                     data-x="140"
-                                     data-y="450"
-                                     data-speed="1000"
-                                     data-start="1500"
-                                     data-easing="easeOutExpo">
-                                     Explore all that is new
-                                </div>
-                                
-                                 <div class="caption text-2 sfl"
-                                     data-x="140"
-                                     data-y="540"
-                                     data-speed="1000"
-                                     data-start="2000"
-                                     data-easing="easeOutExpo">
-                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim.
-                                </div>
-                                
-                                <div class="caption sfb"
-                                     data-x="140"
-                                     data-y="640"
-                                     data-speed="1000"
-                                     data-start="2500"
-                                     data-easing="easeOutExpo">
-                                     <a class="btn" href="#">Learn more</a>                         
-                                </div>
-                                
-                            </li>
-                        </ul>
-                        
-                    </div><!-- end .fullwidthbanner -->
-                </div><!-- end .fullwidthbanner-container -->       
                 
             </div><!-- end .header-wrap-content -->
             
@@ -305,12 +195,17 @@
         <div id="content">
         
         <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-            
+            <div class="splash-container">
+                <div class="splash">
+                    <h1><strong>Northwestern Student Holdings</strong></h1>
+                    <h2>Break the Mold. Defy Expectations.</h2>
+                </div><!-- end .row -->
+            </div><!-- end .row-container --> 
             <div class="row-container">
                 <div class="row">
                     <div class="span12">
                         
-                        <div class="headline wow fadeInLeft" data-wow-duration="1s">
+                        <div class="headline wow fadeIn" data-wow-delay="0.25s">
                             
                             <h1>What is Northwestern Student Holdings?</h1>
                             <h4>Northwestern Student Holdings (NSH) is a student-run holdings company that funds and manages a portfolio of businesses serving the Northwestern and Evanston communities.</h4>
@@ -322,8 +217,8 @@
             </div><!-- end .row-container --> 
 
             <div class="row-container">
-                <div class="row wow fadeIn" data-wow-delay="0.5s">
-                    <div class="span4">
+                <div class="row">
+                    <div class="span4 wow fadeIn" data-wow-delay="0.25s">
                         
                         <div class="icon-box-1">
                         
@@ -341,7 +236,7 @@
                         </div><!-- end .icon-box-1 -->
                         
                     </div><!-- end. span4 -->
-                    <div class="span4">
+                    <div class="span4 wow fadeIn" data-wow-delay="0.5s">
                         
                         <div class="icon-box-1">
                         
@@ -359,7 +254,7 @@
                         </div><!-- end .icon-box-1 -->
                         
                     </div><!-- end. span3 -->
-                    <div class="span4">
+                    <div class="span4 wow fadeIn" data-wow-delay="0.75s">
                         
                         <div class="icon-box-1">
                         
@@ -383,7 +278,7 @@
             <div class="row-container">    
                 <div class="row">
                     <div class="span12">
-                        <h1 class="text-left"><a href="portfolio-2.html">Our Portfolio Companies</a></h1>
+                        <h1 class="text-left">Our Portfolio Companies</h1>
                     </div><!-- end .span12 -->
                 </div><!-- end .row -->
             </div><!-- end .row-container -->
@@ -432,7 +327,7 @@
                                     
                                     <h2>RezEssentials</h2>
                                     
-                                    <p class="hidden-phone">RezEssentials simplifies the move-in process for incoming Northwestern students and their parents by providing a convenient solution for the sale, delivery, and move-in of essential residential elements. These products include futons, compact fridges, desk lamps, fans, and safes.</p>
+                                    <p class="hidden-phone">RezEssentials is a student run business that aims to make your move-in experience easy and stress free.  We provide the room essentials that you'll need in your residence hall, residential college, or residential community and deliver them into your room, before you arrive!</p>
                                     
                                     <a class="btn" href="portfolio-2.html">Learn more</a>
                                     
@@ -503,66 +398,7 @@
                 </div><!-- item -->
                 
             </div><!-- end .portfolio-grid -->
-            
-            <div class="row-container">
-                <div class="row">
-                    <div class="span12">
-                        
-                        <div class="headline">
-                            
-                            <h1>Interested in joining NSH?</h1>
-                            <h4>Check our <a href="apply">apply page</a> for openings!</h4>
-                            
-                        </div><!-- end .headline -->
-                        
-                    </div><!-- end .span12 -->
-                </div><!-- end .row -->
-            </div><!-- end .row-container -->
 
-            <div class="row-container nsh-social-media">
-                <div class="row">
-                    <div class="span12">
-                        
-                        <div class="headline">
-                            
-                            <h1>Connect with us on social media</h1>
-                            <div class="widget ewf_widget_social_media"> 
-                        
-                            <div class="fixed">                                                                
-                                
-                                <a href="#" class="facebook-icon social-icon">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                
-                                <a href="#" class="twitter-icon social-icon">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                
-                                <a href="#" class="googleplus-icon social-icon">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                
-                                <a href="#" class="pinterest-icon social-icon">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                
-                                <a href="#" class="linkedin-icon social-icon">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                
-                                <a href="#" class="youtube-icon social-icon">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
-                                
-                            </div>
-                        
-                        </div><!-- end .ewf_widget_social_media -->
-                            
-                        </div><!-- end .headline -->
-                        
-                    </div><!-- end .span12 -->
-                </div><!-- end .row -->
-            </div><!-- end .row-container -->
             
         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -573,83 +409,17 @@
 
             <div class="row-container">
                 <div class="row">
-                    <div class="span9" id="footer-widget-area-1">
-                        
-                         <div class="widget ewf_widget_navigation">
-                    
-                            <h2 class="widget-title">Company</h2>
-                        
-                            <ul>
-                                <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Team</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Partners</a>
-                                </li>
-                                <li>
-                                    <a href="#">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        
-                        </div><!-- end .ewf_widget_navigation -->
-                        
-                        <div class="widget ewf_widget_navigation">
-                        
-                            <h2 class="widget-title">Services</h2>
- 
-                            <ul>
-                                <li>
-                                    <a href="#">Donec vitae</a>
-                                </li>
-                                <li>
-                                    <a href="#">Fringilla augue</a>
-                                </li>
-                                <li>
-                                    <a href="#">Proin varius</a>
-                                </li>
-                                <li>
-                                    <a href="#">Vitae eu nulla</a>
-                                </li>
-                                <li>
-                                    <a href="#">Imperdiet sem</a>
-                                </li>
-                                <li>
-                                    <a href="#">Class aptent</a>
-                                </li>
-                                <li>
-                                    <a href="#">Quisque arcu</a>
-                                </li>
-                            </ul>
-                            
-                        </div><!-- end .widget_nav_menu -->
-                        
-                        <div class="widget ewf_widget_navigation">
-                    
-                            <h2 class="widget-title">References</h2>
-                        
-                            <ul>
-                                <li>
-                                    <a href="#">Testimonials</a>
-                                </li>
-                                <li>
-                                    <a href="#">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                
-                            </ul>
-                        
-                        </div><!-- end .ewf_widget_navigation -->
-                        
-                        <br class="clear">
-                        
+                    <div class="span6" id="footer-copyright">
+                        <p class="last">&copy; 2015 <strong><span class="text-highlight">Northwestern Student Holdings. All rights reserved.</p>
+                    </div><!-- end .span6 --> 
+                    <div class="span6" id="footer-links">
+                        <div>
+                            <h4><a href="">Home</a></h4>
+                            <h4><a href="">About</a></h4>
+                            <h4><a href="">Portfolio</a></h4>
+                            <h4><a href="">Apply</a></h4>
+                            <h4><a href="">Contact</a></h4>
+                        <div>
                         <div class="widget ewf_widget_social_media"> 
                         
                             <div class="fixed">                                                                
@@ -682,107 +452,13 @@
                         
                         </div><!-- end .ewf_widget_social_media -->
 
-                    </div><!-- end .span9 -->       
-                    <div class="span3" id="footer-widget-area-2">                        
-                        
-                         <div class="widget ewf_widget_contact_info">
-                            
-                             <h2 class="widget-title">Contact us</h2>
-                            
-                            <ul>
-                                <li>
-                                    1046 Heavner Court <br>
-                                    New Hyde Park, NY 11042 
-                                </li>
-                                <li>                                                                
-                                    516-245-7657 <br>
-                                    <a href="mailto:#">office@explore.com</a>
-                                </li> 
-                            </ul>
-                            
-                        </div><!-- end .ewf_widget_contact_info -->
-                        
-                        <div class="widget widget_text">
-                        
-                            <div class="textwidget">
-  
-                                <p class="bordered">
-                                    
-                                    <span class="mute hidden-tablet"><i class="ifc-geo_fence large-icon"></i></span>
-                                    
-                                    <a href="contact.html">
-                                        <span class="mute">Go to</span> 
-                                        <span class="text-uppercase">Google Maps</span>
-                                    </a>
-
-                                </p>
-
-                            </div><!-- edn .textwidget -->
-                            
-                        </div><!-- end .widget_text -->
-                        
-                        <div class="widget widget_text">
-                        
-                            <div class="textwidget">
-                                
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus orci nec massa 
-                                 pulvinar, vitae dignissim orci.</p>
-                                 
-                            </div><!-- end .textwidget -->
-                            
-                        </div><!-- end .widget_text -->
-     
-                    </div><!-- end .span3 -->
+                    </div><!-- end .span6 -->       
                 </div><!-- end .row -->
             </div><!-- end .container -->       
         
         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         </div><!-- end #footer -->
-        <div id="footer-bottom">
-            
-        <!-- /// FOOTER-BOTTOM     ////////////////////////////////////////////////////////////////////////////////////////////// -->   
-                    
-            <div class="row-container">
-                <div class="row">
-                    <div class="span6" id="footer-bottom-widget-area-1">
-                        
-                        <div class="widget widget_text">
-                        
-                            <div class="textwidget">
-                                
-                                <p class="last">&copy; 2015 <strong><span class="text-highlight">Exp</span>lore</strong>. All rights reserved.</p>
-                                
-                            </div><!-- edn .textwidget -->
-                            
-                        </div><!-- end .widget_text -->
-                        
-                    </div><!-- end .span6 -->
-                    <div class="span6" id="footer-bottom-widget-area-2">
-
-                      <div class="widget ewf_widget_navigation">
-                        
-                            <ul>
-                                <li>
-                                    <a href="#">Privacy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms of Use</a>
-                                </li>
-                                <li>
-                                    <a href="#">SiteMap</a>
-                                </li>
-                            </ul>
-                        
-                        </div><!-- end .ewf_widget_navigation -->
-                        
-                    </div><!-- end .span6 -->
-                </div><!-- end .row -->
-            </div><!-- end .container --> 
-        
-        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
-        
-        </div><!-- end #footer-bottom -->
         
     </div><!-- end #wrap -->
     
