@@ -19,7 +19,7 @@
     
     
     <!-- /// Google Fonts ////////  -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,600">
     
     <!-- /// FontAwesome Icons 4.2.0 ////////  -->
     <link rel="stylesheet" href="_layout/css/fontawesome/font-awesome.min.css">
@@ -45,6 +45,13 @@
     <!-- <link rel="stylesheet" href="_layout/css/skins/default.css"> -->
     <!-- <link rel="stylesheet" href="_layout/css/skins/blue.css"> -->
     <!-- <link rel="stylesheet" href="_layout/css/skins/orange.css"> -->
+
+    <link rel="stylesheet" href="custom/navbar.css">
+    <style>
+    .sf-menu > li > a, .sf-menu > li.dropdown > a{
+        color: #393939!important;
+    }
+    </style>
     
 </head>
 <body class="sticky-header page-header">
@@ -70,10 +77,9 @@
         <div id="header-wrap" style="background-image:url(_content/backgrounds/1920x355-1.jpg);">
         
         <!-- /// HEADER WRAP  //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
             <div class="header-wrap-content">
                 
-                <div id="header">
+                <div id="header" class="stuck">
 
                     <div class="row-container">                    
                         
@@ -85,7 +91,8 @@
                                     <!-- // Logo // -->
                                     <div id="logo">
                                         <a href="index.html">
-                                            <img src="_layout/images/logo.png" alt="website logo">
+                                            <img src="_content/NSH/nsh_condensed_logo.png" id="white-logo" alt="website logo white">
+                                            <img src="_content/NSH/nsh_condensed_logo.png" id="gray-logo" alt="website logo gray">
                                         </a>
                                     </div>
                                 
@@ -103,211 +110,20 @@
                                     <nav>
                             
                                         <ul class="sf-menu fixed" id="menu">
-                                            <li class="dropdown">
-                                                <a href="index.html">Home</a>
-                                                <ul>
-                                                    <li><a href="index.html">Home 1</a></li>
-                                                    <li><a href="index-2.html">Home 2</a></li>
-                                                    <li><a href="index-3.html">Home 3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown current">
-                                                <a href="about-us.html">Pages</a>
-                                                <ul>
-                                                    <li><a href="about-us.html">About us</a></li>
-                                                    <li><a href="services.html">Services</a></li>
-                                                    <li><a href="single-service.html">Single service</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                                    <li><a href="page-404.html">Page 404</a></li>
-                                                    <li><a href="full-width-page.html">Full width page</a></li>
-                                                    <li><a href="page-with-sidebar.html">Page with sidebar</a></li>                                
-                                                    <li class="dropdown">
-                                                        <a href="#">3rd level dropdown</a>
-                                                         <ul>
-                                                            <li><a href="#">3rd level</a></li>
-                                                            <li><a href="#">Dropdown</a></li>
-                                                            <li><a href="#">Example</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>                            
-                                                <a href="#">Features</a>
-                                                
-                                                <div class="sf-mega sf-mega-4-col">
-                                                    
-                                                    <div class="sf-mega-section">
-                                                    
-                                                        <ul>
-                                                            <li>                                            
-                                                                <a href="typography.html">
-                                                                    <i class="ifc-generic_text"></i>
-                                                                    Typography
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="responsive-grid.html">
-                                                                    <i class="ifc-vpn"></i>
-                                                                    Responsive Grid
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="sliders.html">
-                                                                    <i class="ifc-tv"></i>
-                                                                    Sliders
-                                                                </a>
-                                                            </li>                                                                               
-                                                            <li>                                            
-                                                                <a href="headline.html">
-                                                                    <i class="ifc-up2"></i>
-                                                                    Headline
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="animations.html">
-                                                                    <i class="ifc-joystick"></i>
-                                                                    Animations
-                                                                </a>
-                                                            </li> 
-                                                            <li>                                            
-                                                                <a href="alerts-notifications.html">
-                                                                    <i class="ifc-error"></i>
-                                                                    Alerts
-                                                                </a>
-                                                            </li> 
-                                                            <li>                                            
-                                                                <a href="custom-lists.html">
-                                                                    <i class="ifc-torah"></i>
-                                                                    Custom Lists
-                                                                </a>
-                                                            </li>                                       
-                                                        </ul>
-                                                    
-                                                    </div><!-- end .sf-mega-section -->
-                                                    <div class="sf-mega-section">
-                                                    
-                                                        <ul>                                        
-                                                            <li>                                            
-                                                                <a href="dividers.html">
-                                                                    <i class="ifc-line"></i>
-                                                                    Dividers
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="buttons.html">
-                                                                    <i class="ifc-sent"></i>
-                                                                    Buttons
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="google-maps.html">
-                                                                    <i class="ifc-map_marker"></i>
-                                                                    Google maps
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="icon-boxes.html">
-                                                                    <i class="ifc-inbox"></i>
-                                                                    Icon Boxes
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="process-builder.html">
-                                                                    <i class="ifc-circuit"></i>
-                                                                    Process Builder
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="infographics.html">
-                                                                    <i class="ifc-combo_chart"></i>
-                                                                    Infographics
-                                                                </a>
-                                                            </li>                                         
-                                                            <li>                                            
-                                                                <a href="pricing-data-tables.html">
-                                                                    <i class="ifc-price_tag"></i>
-                                                                    Pricing tables
-                                                                </a>
-                                                            </li>                                          
-                                                        </ul>
-                                                    
-                                                    </div><!-- end .sf-mega-section -->
-                                                    <div class="sf-mega-section">
-                                                    
-                                                        <ul>
-                                                            <li>                                            
-                                                                <a href="accordion-toggles.html">
-                                                                    <i class="ifc-week_view"></i>
-                                                                    Accordion
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="tabs.html">
-                                                                    <i class="ifc-data_in_both_directions"></i>
-                                                                    Tabs
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="page-sections.html">
-                                                                    <i class="ifc-cut"></i>
-                                                                    Page sections
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="parallax-backgrounds.html">
-                                                                    <i class="ifc-align_justify"></i>
-                                                                    Parallax
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="video-background.html">
-                                                                    <i class="ifc-video_camera"></i>
-                                                                    Video background
-                                                                </a>
-                                                            </li>
-                                                            <li>                                            
-                                                                <a href="social-media.html">
-                                                                    <i class="ifc-facebook"></i>
-                                                                    Social Media
-                                                                </a>
-                                                            </li>                                        
-                                                            <li>
-                                                                <a href="widgets.html">
-                                                                    <i class="ifc-info"></i>
-                                                                    Widgets
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        
-                                                    </div><!-- end .sf-mega-section -->
-                                                    <div class="sf-mega-section hidden-phone hidden-tablet">
-                                                        
-                                                        <p><img src="_layout/images/megamenu.jpg" alt=""></p>
-                                                        
-                                                    </div><!-- end .sf-mega-section -->
-                                                    
-                                                </div><!-- end .sf-mega -->
-                                                
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="portfolio-1.html">Portfolio</a>
-                                                <ul>
-                                                    <li><a href="portfolio-1.html">Portfolio 1</a></li>
-                                                    <li><a href="portfolio-2.html">Portfolio 2</a></li>
-                                                    <li><a href="portfolio-3.html">Portfolio 3</a></li>
-                                                    <li><a href="portfolio-item.html">Portfolio item</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-post.html">Blog post</a></li>
-                                                </ul>
+                                            <li>
+                                                <a href="/">Home</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="about">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="pf">Portfolio</a>
+                                            </li>
+                                            <li>
+                                                <a href="team">Team</a>
+                                            </li>
+                                            <li>
+                                                <a href="apply">Apply</a>         
                                             </li>
                                         </ul>
                                         
@@ -322,38 +138,9 @@
 
                 </div><!-- end #header -->
 
-                <div class="row-container">
                 
-                    <div id="page-header">
+            </div><!-- end .header-wrap-content --> 
 
-                        <div class="row">
-                            <div class="span6">
-                        
-                                <h3>About Us</h3>
-                            
-                            </div><!-- end .span6 -->
-                            <div class="span6">
-                        
-                                <div class="breadcrumbs">
-                                    
-                                    <ul>
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="current">About us</li>
-                                    </ul>
-                                    
-                                </div><!-- end .breadcrumbs -->
-                            
-                            </div><!-- end .span6 -->
-                        </div><!-- end .row -->
-
-                    </div><!-- end #page-header -->
-
-                </div><!-- end .row-container -->       
-                
-            </div><!-- end .header-wrap-content -->
-            
             <div class="header-wrap-overlay"></div>
             
         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -1040,83 +827,17 @@
 
             <div class="row-container">
                 <div class="row">
-                    <div class="span9" id="footer-widget-area-1">
-                        
-                         <div class="widget ewf_widget_navigation">
-                    
-                            <h2 class="widget-title">Company</h2>
-                        
-                            <ul>
-                                <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Team</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Partners</a>
-                                </li>
-                                <li>
-                                    <a href="#">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        
-                        </div><!-- end .ewf_widget_navigation -->
-                        
-                        <div class="widget ewf_widget_navigation">
-                        
-                            <h2 class="widget-title">Services</h2>
- 
-                            <ul>
-                                <li>
-                                    <a href="#">Donec vitae</a>
-                                </li>
-                                <li>
-                                    <a href="#">Fringilla augue</a>
-                                </li>
-                                <li>
-                                    <a href="#">Proin varius</a>
-                                </li>
-                                <li>
-                                    <a href="#">Vitae eu nulla</a>
-                                </li>
-                                <li>
-                                    <a href="#">Imperdiet sem</a>
-                                </li>
-                                <li>
-                                    <a href="#">Class aptent</a>
-                                </li>
-                                <li>
-                                    <a href="#">Quisque arcu</a>
-                                </li>
-                            </ul>
-                            
-                        </div><!-- end .widget_nav_menu -->
-                        
-                        <div class="widget ewf_widget_navigation">
-                    
-                            <h2 class="widget-title">References</h2>
-                        
-                            <ul>
-                                <li>
-                                    <a href="#">Testimonials</a>
-                                </li>
-                                <li>
-                                    <a href="#">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                
-                            </ul>
-                        
-                        </div><!-- end .ewf_widget_navigation -->
-                        
-                        <br class="clear">
-                        
+                    <div class="span6" id="footer-copyright">
+                        <p class="last">&copy; 2015 <strong><span class="text-highlight">Northwestern Student Holdings. All rights reserved.</p>
+                    </div><!-- end .span6 --> 
+                    <div class="span6" id="footer-links">
+                        <div>
+                            <h4><a href="">Home</a></h4>
+                            <h4><a href="">About</a></h4>
+                            <h4><a href="">Portfolio</a></h4>
+                            <h4><a href="">Apply</a></h4>
+                            <h4><a href="">Contact</a></h4>
+                        <div>
                         <div class="widget ewf_widget_social_media"> 
                         
                             <div class="fixed">                                                                
@@ -1149,107 +870,14 @@
                         
                         </div><!-- end .ewf_widget_social_media -->
 
-                    </div><!-- end .span9 -->       
-                    <div class="span3" id="footer-widget-area-2">                        
-                        
-                         <div class="widget ewf_widget_contact_info">
-                            
-                             <h2 class="widget-title">Contact us</h2>
-                            
-                            <ul>
-                                <li>
-                                    1046 Heavner Court <br>
-                                    New Hyde Park, NY 11042 
-                                </li>
-                                <li>                                                                
-                                    516-245-7657 <br>
-                                    <a href="mailto:#">office@explore.com</a>
-                                </li> 
-                            </ul>
-                            
-                        </div><!-- end .ewf_widget_contact_info -->
-                        
-                        <div class="widget widget_text">
-                        
-                            <div class="textwidget">
-  
-                                <p class="bordered">
-                                    
-                                    <span class="mute hidden-tablet"><i class="ifc-geo_fence large-icon"></i></span>
-                                    
-                                    <a href="contact.html">
-                                        <span class="mute">Go to</span> 
-                                        <span class="text-uppercase">Google Maps</span>
-                                    </a>
-
-                                </p>
-
-                            </div><!-- edn .textwidget -->
-                            
-                        </div><!-- end .widget_text -->
-                        
-                        <div class="widget widget_text">
-                        
-                            <div class="textwidget">
-                                
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus orci nec massa 
-                                 pulvinar, vitae dignissim orci.</p>
-                                 
-                            </div><!-- end .textwidget -->
-                            
-                        </div><!-- end .widget_text -->
-     
-                    </div><!-- end .span3 -->
+                    </div><!-- end .span6 -->       
                 </div><!-- end .row -->
             </div><!-- end .container -->       
         
         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
         </div><!-- end #footer -->
-        <div id="footer-bottom">
-            
-        <!-- /// FOOTER-BOTTOM     ////////////////////////////////////////////////////////////////////////////////////////////// -->   
-                    
-            <div class="row-container">
-                <div class="row">
-                    <div class="span6" id="footer-bottom-widget-area-1">
-                        
-                        <div class="widget widget_text">
-                        
-                            <div class="textwidget">
-                                
-                                <p class="last">&copy; 2015 <strong><span class="text-highlight">Exp</span>lore</strong>. All rights reserved.</p>
-                                
-                            </div><!-- edn .textwidget -->
-                            
-                        </div><!-- end .widget_text -->
-                        
-                    </div><!-- end .span6 -->
-                    <div class="span6" id="footer-bottom-widget-area-2">
 
-                      <div class="widget ewf_widget_navigation">
-                        
-                            <ul>
-                                <li>
-                                    <a href="#">Privacy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms of Use</a>
-                                </li>
-                                <li>
-                                    <a href="#">SiteMap</a>
-                                </li>
-                            </ul>
-                        
-                        </div><!-- end .ewf_widget_navigation -->
-                        
-                    </div><!-- end .span6 -->
-                </div><!-- end .row -->
-            </div><!-- end .container --> 
-        
-        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
-        
-        </div><!-- end #footer-bottom -->
         
     </div><!-- end #wrap -->
     
