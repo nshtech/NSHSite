@@ -362,3 +362,49 @@
 		float: none; 	/* 1 */
 		margin-left: 0; /* 2 */
 	}
+
+	/*Matt Hong*/
+	.team-span{
+		text-align:center;
+	}
+	.team-row-container{
+		margin: 0 auto;
+	}
+	.team-row{
+		margin: 0 auto;
+	}
+	@media (min-width: 585px) and (max-width: 650px) {
+		.team-row {
+			margin-left: 60px;
+		}
+	}
+	@media (min-width: 510px) and (max-width: 585px) {
+		.team-row {
+			margin-left: 30px;
+		}
+	}
+	.team-group-name-container{
+		text-align:center;
+		margin: 24px;
+	}
+	.team-group-name {
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */;
+	}
+	.groups-btn-group-row-container {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	#groups-btn-group{
+		display: inline-block;
+	}
+	#groups-btn-group > .btn{
+		padding: 10px 15px;
+	}
+	@media (min-width: 800px) {
+		#groups-btn-group {
+			width: 750px;
+		}	
+	}

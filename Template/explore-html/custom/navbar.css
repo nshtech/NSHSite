@@ -5,16 +5,24 @@
 #logo a img{
     max-height: 50px;
 }
-#header{
+#gray-logo{
+    display: none;
+}
+.stuck{
     background-color: #fff!important;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 0px solid #ddd;
 }
 .sf-menu{
     margin-top: 2em;
 }
-.sf-menu > li > a, .sf-menu > li.dropdown > a{
-    color: #393939;
+.stuck .sf-menu a{
+    color: #393939!important;
     padding-bottom: 2em;
+    padding-top: 22px!important;
+}
+#header .sf-menu > li > a, .sf-menu > li.dropdown > a{
+    padding-bottom: 2em;
+    font-weight: 500;
 }
 #mobile-menu-trigger{
     margin-bottom: 2em;
